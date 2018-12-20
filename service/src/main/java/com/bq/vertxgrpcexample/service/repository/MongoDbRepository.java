@@ -1,8 +1,8 @@
 package com.bq.vertxgrpcexample.service.repository;
 
+import com.bq.sdk.api.proto.Person;
 import com.bq.vertxgrpcexample.service.config.SharedConfig;
 import com.bq.vertxgrpcexample.service.converter.PersonConverter;
-import com.bq.vertxgrpcexample.service.proto.Person;
 import io.reactivex.Completable;
 import io.reactivex.Maybe;
 import io.reactivex.Single;

@@ -16,6 +16,14 @@
         <main.verticle>com.bq.vertxgrpcexample.api.verticles.MainVerticle</main.verticle>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.bq</groupId>
+            <artifactId>sdk</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>

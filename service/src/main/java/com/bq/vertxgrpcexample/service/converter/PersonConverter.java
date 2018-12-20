@@ -1,6 +1,6 @@
 package com.bq.vertxgrpcexample.service.converter;
 
-import com.bq.vertxgrpcexample.service.proto.Person;
+import com.bq.sdk.api.proto.Person;
 import io.vertx.core.json.JsonObject;
 
 public interface PersonConverter extends Converter<Person> {

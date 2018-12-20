@@ -21,6 +21,13 @@
             <groupId>io.vertx</groupId>
             <artifactId>vertx-mongo-client</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.bq</groupId>
+            <artifactId>sdk</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
     <build>
