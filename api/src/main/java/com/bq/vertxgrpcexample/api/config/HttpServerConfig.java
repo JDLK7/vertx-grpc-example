@@ -9,12 +9,12 @@ import java.util.Optional;
  */
 public interface HttpServerConfig {
 
-    Optional<String> getHost();
+    Optional<String> getHttpHost();
 
-    Optional<Integer> getPort();
+    Optional<Integer> getHttpPort();
 
-    Optional<String> getServiceHost();
+    Optional<String> getRpcHost();
 
-    Optional<Integer> getServicePort();
+    Optional<Integer> getRpcPort();
 
 }

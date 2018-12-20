@@ -17,8 +17,8 @@ public class MainVerticle extends AbstractVerticle {
     public void start() throws Exception {
         var sharedConfig = SharedConfig.getInstance();
 
-        var rpcHost = sharedConfig.getServiceHost().orElse("localhost");
-        var rpcPort = sharedConfig.getServicePort().orElse(8000);
+        var rpcHost = sharedConfig.getRpcHost().orElse("localhost");
+        var rpcPort = sharedConfig.getRpcPort().orElse(8000);
 
         vertx.executeBlocking(future -> {
             future.complete(MongoDbRepository.getInstance(vertx, sharedConfig));
