@@ -4,7 +4,7 @@ This project contains an example to show the use of gRPC services with Vert.x3.
 
 <img src="Diagram.png">
 
-## Setup a MongoDB
+## Setup MongoDB
 
 Although you can use your preferred database, this project is already setup to
 work with a MongoDB database. You only need to start a server using the following
