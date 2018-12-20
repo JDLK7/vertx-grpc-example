@@ -7,6 +7,10 @@ import com.bq.vertxgrpcexample.service.service.PersonService;
 import io.vertx.grpc.VertxServerBuilder;
 import io.vertx.reactivex.core.AbstractVerticle;
 
+/**
+ * MainVerticle is where the app bootstraps and the different dependencies are
+ * instantiated. It is also where the database and RPC server are setup.
+ */
 public class MainVerticle extends AbstractVerticle {
 
     @Override

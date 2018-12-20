@@ -14,6 +14,10 @@ import java.util.Optional;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
+/**
+ * Runner is responsible of the verticles deployment and the configuration loading. The configuration
+ * is loaded from a JSON file which's path is taken from the CONFIG_PATH environment variable.
+ */
 public class Runner {
 
     public static void run(Class clazz) {

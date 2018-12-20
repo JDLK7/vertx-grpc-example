@@ -8,8 +8,16 @@ import io.vertx.reactivex.ext.web.handler.BodyHandler;
 
 import java.util.List;
 
+/**
+ * RouterFactory contains a variety of helper methods for building a Vertx HTTP router for a given resource.
+ */
 public interface RouterFactory {
 
+    /**
+     * Builds a simple router with a BodyHandler and the usual headers for working with JSON request and responses.
+     * @param vertx
+     * @return
+     */
     default Router router(Vertx vertx) {
         var router = Router.router(vertx);
 
@@ -24,6 +32,14 @@ public interface RouterFactory {
         return router;
     }
 
+    /**
+     * Given a resource name, builds a router with all the REST methods following the REST
+     * standard. It also attaches a controller for handling the incoming requests.
+     * @param vertx
+     * @param resourceName
+     * @param controller
+     * @return
+     */
     default Router restRouter(Vertx vertx, String resourceName, RestController controller) {
         var router = router(vertx);
 
@@ -36,6 +52,15 @@ public interface RouterFactory {
         return router;
     }
 
+    /**
+     * Given a resource name, builds a router with the selected REST methods following the
+     * REST standard. It also attaches a controller for handling the incoming requests.
+     * @param vertx
+     * @param resourceName
+     * @param controller
+     * @param methods
+     * @return
+     */
     default Router restRouter(Vertx vertx, String resourceName, RestController controller, List<String> methods) {
         var router = router(vertx);
 

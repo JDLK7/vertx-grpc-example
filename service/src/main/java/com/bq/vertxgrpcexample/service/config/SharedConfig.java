@@ -4,14 +4,25 @@ import io.vertx.core.json.JsonObject;
 
 import java.util.Optional;
 
+/**
+ * SharedConfig implements the methods needed to retrieve the app configuration. Each of the interfaces that implements
+ * represents a set of configuration properties used in different parts of the codebase. In this way, we can keep those
+ * parts as simple and descriptive as possible because they would receive only the configuration they actually need.
+ * Every bit of configuration is returned as an Optional to avoiding the use of nulls and preventing possible errors.
+ */
 public class SharedConfig implements HttpServerConfig, DatabaseConfig, RedisConfig {
 
+    /**
+     * The JsonObject which contains the app configuration.
+     */
     private JsonObject config;
 
     private static SharedConfig instance;
-    private static final Byte LOCK = Byte.valueOf((byte)0);
+    private static final Byte LOCK = (byte) 0;
 
-    // Thread safe singleton implementation
+    /**
+     * @return a reference to the single instance of SharedConfig.
+     */
     public static SharedConfig getInstance() {
         if (instance == null) {
             synchronized (LOCK) {
@@ -26,10 +37,17 @@ public class SharedConfig implements HttpServerConfig, DatabaseConfig, RedisConf
 
     private SharedConfig() {}
 
+    /**
+     * Initializes the app configuration.
+     * @param configInit JsonObject that contains the initial configuration
+     */
     public void init(JsonObject configInit) {
         config = configInit;
     }
 
+    /**
+     * @return the configuration of the whole app.
+     */
     public Optional<JsonObject> getConfig() {
         return Optional.of(config);
     }
