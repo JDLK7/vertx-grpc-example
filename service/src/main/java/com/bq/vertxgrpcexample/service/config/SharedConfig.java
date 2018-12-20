@@ -67,6 +67,16 @@ public class SharedConfig implements HttpServerConfig, DatabaseConfig, RedisConf
     }
 
     @Override
+    public  Optional<String> getServiceHost(){
+        return Optional.ofNullable(config.getString("service.host"));
+    }
+
+    @Override
+    public  Optional<Integer> getServicePort(){
+        return Optional.ofNullable(config.getInteger("service.port"));
+    }
+
+    @Override
     public Optional<String> getDbName() {
         return Optional.ofNullable(config.getString("db.name"));
     }

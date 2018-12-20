@@ -13,4 +13,8 @@ public interface HttpServerConfig {
 
     Optional<Integer> getPort();
 
+    Optional<String> getServiceHost();
+
+    Optional<Integer> getServicePort();
+
 }
