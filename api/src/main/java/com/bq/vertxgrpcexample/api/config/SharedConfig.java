@@ -57,23 +57,23 @@ public class SharedConfig implements HttpServerConfig, DatabaseConfig, RedisConf
     }
 
     @Override
-    public  Optional<String> getHost(){
+    public  Optional<String> getHttpHost(){
         return Optional.ofNullable(config.getString("http.host"));
     }
 
     @Override
-    public  Optional<Integer> getPort(){
+    public  Optional<Integer> getHttpPort(){
         return Optional.ofNullable(config.getInteger("http.port"));
     }
 
     @Override
-    public  Optional<String> getServiceHost(){
-        return Optional.ofNullable(config.getString("service.host"));
+    public  Optional<String> getRpcHost(){
+        return Optional.ofNullable(config.getString("rpc.host"));
     }
 
     @Override
-    public  Optional<Integer> getServicePort(){
-        return Optional.ofNullable(config.getInteger("service.port"));
+    public  Optional<Integer> getRpcPort(){
+        return Optional.ofNullable(config.getInteger("rpc.port"));
     }
 
     @Override

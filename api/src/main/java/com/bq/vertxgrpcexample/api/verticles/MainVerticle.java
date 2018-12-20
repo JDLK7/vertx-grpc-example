@@ -16,11 +16,11 @@ public class MainVerticle extends AbstractVerticle {
     public void start() throws Exception {
         var sharedConfig = SharedConfig.getInstance();
 
-        var httpHost = sharedConfig.getHost().orElse("localhost");
-        var httpPort = sharedConfig.getPort().orElse(8080);
+        var httpHost = sharedConfig.getHttpHost().orElse("localhost");
+        var httpPort = sharedConfig.getHttpPort().orElse(8080);
 
-        var serviceHost = sharedConfig.getServiceHost().orElse("localhost");
-        var servicePort = sharedConfig.getServicePort().orElse(8000);
+        var serviceHost = sharedConfig.getRpcHost().orElse("localhost");
+        var servicePort = sharedConfig.getRpcPort().orElse(8000);
 
         var context = sharedConfig.getContext().orElse("default-context");
 

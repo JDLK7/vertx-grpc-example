@@ -4,8 +4,8 @@
   "http.port": 8000,
   "http.host": "127.0.0.1",
 
-  "service.host": "127.0.0.1",
-  "service.port": 8081,
+  "rpc.host": "127.0.0.1",
+  "rpc.port": 8081,
 
   "db.name": "person_api",
   "db.pool": "person_api_pool"
