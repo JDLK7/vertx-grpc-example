@@ -1,4 +1,4 @@
-package com.bq.vertxgrpcexample.api.proto;
+package com.bq.sdk.api.proto;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
@@ -56,25 +56,25 @@ public final class PersonServiceGrpc {
   public static final String SERVICE_NAME = "proto.PersonService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<com.bq.vertxgrpcexample.api.proto.Person,
-      com.bq.vertxgrpcexample.api.proto.Person> getCreatePersonMethod;
+  private static volatile io.grpc.MethodDescriptor<com.bq.sdk.api.proto.Person,
+      com.bq.sdk.api.proto.Person> getCreatePersonMethod;
 
-  public static io.grpc.MethodDescriptor<com.bq.vertxgrpcexample.api.proto.Person,
-      com.bq.vertxgrpcexample.api.proto.Person> getCreatePersonMethod() {
-    io.grpc.MethodDescriptor<com.bq.vertxgrpcexample.api.proto.Person, com.bq.vertxgrpcexample.api.proto.Person> getCreatePersonMethod;
+  public static io.grpc.MethodDescriptor<com.bq.sdk.api.proto.Person,
+      com.bq.sdk.api.proto.Person> getCreatePersonMethod() {
+    io.grpc.MethodDescriptor<com.bq.sdk.api.proto.Person, com.bq.sdk.api.proto.Person> getCreatePersonMethod;
     if ((getCreatePersonMethod = PersonServiceGrpc.getCreatePersonMethod) == null) {
       synchronized (PersonServiceGrpc.class) {
         if ((getCreatePersonMethod = PersonServiceGrpc.getCreatePersonMethod) == null) {
           PersonServiceGrpc.getCreatePersonMethod = getCreatePersonMethod = 
-              io.grpc.MethodDescriptor.<com.bq.vertxgrpcexample.api.proto.Person, com.bq.vertxgrpcexample.api.proto.Person>newBuilder()
+              io.grpc.MethodDescriptor.<com.bq.sdk.api.proto.Person, com.bq.sdk.api.proto.Person>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "proto.PersonService", "CreatePerson"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.bq.vertxgrpcexample.api.proto.Person.getDefaultInstance()))
+                  com.bq.sdk.api.proto.Person.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.bq.vertxgrpcexample.api.proto.Person.getDefaultInstance()))
+                  com.bq.sdk.api.proto.Person.getDefaultInstance()))
                   .setSchemaDescriptor(new PersonServiceMethodDescriptorSupplier("CreatePerson"))
                   .build();
           }
@@ -83,25 +83,25 @@ public final class PersonServiceGrpc {
      return getCreatePersonMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.bq.vertxgrpcexample.api.proto.FetchPersonRequest,
-      com.bq.vertxgrpcexample.api.proto.Person> getFetchPersonMethod;
+  private static volatile io.grpc.MethodDescriptor<com.bq.sdk.api.proto.FetchPersonRequest,
+      com.bq.sdk.api.proto.Person> getFetchPersonMethod;
 
-  public static io.grpc.MethodDescriptor<com.bq.vertxgrpcexample.api.proto.FetchPersonRequest,
-      com.bq.vertxgrpcexample.api.proto.Person> getFetchPersonMethod() {
-    io.grpc.MethodDescriptor<com.bq.vertxgrpcexample.api.proto.FetchPersonRequest, com.bq.vertxgrpcexample.api.proto.Person> getFetchPersonMethod;
+  public static io.grpc.MethodDescriptor<com.bq.sdk.api.proto.FetchPersonRequest,
+      com.bq.sdk.api.proto.Person> getFetchPersonMethod() {
+    io.grpc.MethodDescriptor<com.bq.sdk.api.proto.FetchPersonRequest, com.bq.sdk.api.proto.Person> getFetchPersonMethod;
     if ((getFetchPersonMethod = PersonServiceGrpc.getFetchPersonMethod) == null) {
       synchronized (PersonServiceGrpc.class) {
         if ((getFetchPersonMethod = PersonServiceGrpc.getFetchPersonMethod) == null) {
           PersonServiceGrpc.getFetchPersonMethod = getFetchPersonMethod = 
-              io.grpc.MethodDescriptor.<com.bq.vertxgrpcexample.api.proto.FetchPersonRequest, com.bq.vertxgrpcexample.api.proto.Person>newBuilder()
+              io.grpc.MethodDescriptor.<com.bq.sdk.api.proto.FetchPersonRequest, com.bq.sdk.api.proto.Person>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "proto.PersonService", "FetchPerson"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.bq.vertxgrpcexample.api.proto.FetchPersonRequest.getDefaultInstance()))
+                  com.bq.sdk.api.proto.FetchPersonRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.bq.vertxgrpcexample.api.proto.Person.getDefaultInstance()))
+                  com.bq.sdk.api.proto.Person.getDefaultInstance()))
                   .setSchemaDescriptor(new PersonServiceMethodDescriptorSupplier("FetchPerson"))
                   .build();
           }
@@ -110,25 +110,25 @@ public final class PersonServiceGrpc {
      return getFetchPersonMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.bq.vertxgrpcexample.api.proto.FetchAllRequest,
-      com.bq.vertxgrpcexample.api.proto.FetchAllResponse> getFetchAllMethod;
+  private static volatile io.grpc.MethodDescriptor<com.bq.sdk.api.proto.FetchAllRequest,
+      com.bq.sdk.api.proto.FetchAllResponse> getFetchAllMethod;
 
-  public static io.grpc.MethodDescriptor<com.bq.vertxgrpcexample.api.proto.FetchAllRequest,
-      com.bq.vertxgrpcexample.api.proto.FetchAllResponse> getFetchAllMethod() {
-    io.grpc.MethodDescriptor<com.bq.vertxgrpcexample.api.proto.FetchAllRequest, com.bq.vertxgrpcexample.api.proto.FetchAllResponse> getFetchAllMethod;
+  public static io.grpc.MethodDescriptor<com.bq.sdk.api.proto.FetchAllRequest,
+      com.bq.sdk.api.proto.FetchAllResponse> getFetchAllMethod() {
+    io.grpc.MethodDescriptor<com.bq.sdk.api.proto.FetchAllRequest, com.bq.sdk.api.proto.FetchAllResponse> getFetchAllMethod;
     if ((getFetchAllMethod = PersonServiceGrpc.getFetchAllMethod) == null) {
       synchronized (PersonServiceGrpc.class) {
         if ((getFetchAllMethod = PersonServiceGrpc.getFetchAllMethod) == null) {
           PersonServiceGrpc.getFetchAllMethod = getFetchAllMethod = 
-              io.grpc.MethodDescriptor.<com.bq.vertxgrpcexample.api.proto.FetchAllRequest, com.bq.vertxgrpcexample.api.proto.FetchAllResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.bq.sdk.api.proto.FetchAllRequest, com.bq.sdk.api.proto.FetchAllResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "proto.PersonService", "FetchAll"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.bq.vertxgrpcexample.api.proto.FetchAllRequest.getDefaultInstance()))
+                  com.bq.sdk.api.proto.FetchAllRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.bq.vertxgrpcexample.api.proto.FetchAllResponse.getDefaultInstance()))
+                  com.bq.sdk.api.proto.FetchAllResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new PersonServiceMethodDescriptorSupplier("FetchAll"))
                   .build();
           }
@@ -137,25 +137,25 @@ public final class PersonServiceGrpc {
      return getFetchAllMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.bq.vertxgrpcexample.api.proto.Person,
-      com.bq.vertxgrpcexample.api.proto.Person> getUpdatePersonMethod;
+  private static volatile io.grpc.MethodDescriptor<com.bq.sdk.api.proto.Person,
+      com.bq.sdk.api.proto.Person> getUpdatePersonMethod;
 
-  public static io.grpc.MethodDescriptor<com.bq.vertxgrpcexample.api.proto.Person,
-      com.bq.vertxgrpcexample.api.proto.Person> getUpdatePersonMethod() {
-    io.grpc.MethodDescriptor<com.bq.vertxgrpcexample.api.proto.Person, com.bq.vertxgrpcexample.api.proto.Person> getUpdatePersonMethod;
+  public static io.grpc.MethodDescriptor<com.bq.sdk.api.proto.Person,
+      com.bq.sdk.api.proto.Person> getUpdatePersonMethod() {
+    io.grpc.MethodDescriptor<com.bq.sdk.api.proto.Person, com.bq.sdk.api.proto.Person> getUpdatePersonMethod;
     if ((getUpdatePersonMethod = PersonServiceGrpc.getUpdatePersonMethod) == null) {
       synchronized (PersonServiceGrpc.class) {
         if ((getUpdatePersonMethod = PersonServiceGrpc.getUpdatePersonMethod) == null) {
           PersonServiceGrpc.getUpdatePersonMethod = getUpdatePersonMethod = 
-              io.grpc.MethodDescriptor.<com.bq.vertxgrpcexample.api.proto.Person, com.bq.vertxgrpcexample.api.proto.Person>newBuilder()
+              io.grpc.MethodDescriptor.<com.bq.sdk.api.proto.Person, com.bq.sdk.api.proto.Person>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "proto.PersonService", "UpdatePerson"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.bq.vertxgrpcexample.api.proto.Person.getDefaultInstance()))
+                  com.bq.sdk.api.proto.Person.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.bq.vertxgrpcexample.api.proto.Person.getDefaultInstance()))
+                  com.bq.sdk.api.proto.Person.getDefaultInstance()))
                   .setSchemaDescriptor(new PersonServiceMethodDescriptorSupplier("UpdatePerson"))
                   .build();
           }
@@ -164,25 +164,25 @@ public final class PersonServiceGrpc {
      return getUpdatePersonMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.bq.vertxgrpcexample.api.proto.Person,
-      com.bq.vertxgrpcexample.api.proto.DeleteResponse> getDeletePersonMethod;
+  private static volatile io.grpc.MethodDescriptor<com.bq.sdk.api.proto.Person,
+      com.bq.sdk.api.proto.DeleteResponse> getDeletePersonMethod;
 
-  public static io.grpc.MethodDescriptor<com.bq.vertxgrpcexample.api.proto.Person,
-      com.bq.vertxgrpcexample.api.proto.DeleteResponse> getDeletePersonMethod() {
-    io.grpc.MethodDescriptor<com.bq.vertxgrpcexample.api.proto.Person, com.bq.vertxgrpcexample.api.proto.DeleteResponse> getDeletePersonMethod;
+  public static io.grpc.MethodDescriptor<com.bq.sdk.api.proto.Person,
+      com.bq.sdk.api.proto.DeleteResponse> getDeletePersonMethod() {
+    io.grpc.MethodDescriptor<com.bq.sdk.api.proto.Person, com.bq.sdk.api.proto.DeleteResponse> getDeletePersonMethod;
     if ((getDeletePersonMethod = PersonServiceGrpc.getDeletePersonMethod) == null) {
       synchronized (PersonServiceGrpc.class) {
         if ((getDeletePersonMethod = PersonServiceGrpc.getDeletePersonMethod) == null) {
           PersonServiceGrpc.getDeletePersonMethod = getDeletePersonMethod = 
-              io.grpc.MethodDescriptor.<com.bq.vertxgrpcexample.api.proto.Person, com.bq.vertxgrpcexample.api.proto.DeleteResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.bq.sdk.api.proto.Person, com.bq.sdk.api.proto.DeleteResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "proto.PersonService", "DeletePerson"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.bq.vertxgrpcexample.api.proto.Person.getDefaultInstance()))
+                  com.bq.sdk.api.proto.Person.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.bq.vertxgrpcexample.api.proto.DeleteResponse.getDefaultInstance()))
+                  com.bq.sdk.api.proto.DeleteResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new PersonServiceMethodDescriptorSupplier("DeletePerson"))
                   .build();
           }
@@ -227,36 +227,36 @@ public final class PersonServiceGrpc {
 
     /**
      */
-    public void createPerson(com.bq.vertxgrpcexample.api.proto.Person request,
-        io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.Person> responseObserver) {
+    public void createPerson(com.bq.sdk.api.proto.Person request,
+        io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.Person> responseObserver) {
       asyncUnimplementedUnaryCall(getCreatePersonMethod(), responseObserver);
     }
 
     /**
      */
-    public void fetchPerson(com.bq.vertxgrpcexample.api.proto.FetchPersonRequest request,
-        io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.Person> responseObserver) {
+    public void fetchPerson(com.bq.sdk.api.proto.FetchPersonRequest request,
+        io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.Person> responseObserver) {
       asyncUnimplementedUnaryCall(getFetchPersonMethod(), responseObserver);
     }
 
     /**
      */
-    public void fetchAll(com.bq.vertxgrpcexample.api.proto.FetchAllRequest request,
-        io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.FetchAllResponse> responseObserver) {
+    public void fetchAll(com.bq.sdk.api.proto.FetchAllRequest request,
+        io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.FetchAllResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getFetchAllMethod(), responseObserver);
     }
 
     /**
      */
-    public void updatePerson(com.bq.vertxgrpcexample.api.proto.Person request,
-        io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.Person> responseObserver) {
+    public void updatePerson(com.bq.sdk.api.proto.Person request,
+        io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.Person> responseObserver) {
       asyncUnimplementedUnaryCall(getUpdatePersonMethod(), responseObserver);
     }
 
     /**
      */
-    public void deletePerson(com.bq.vertxgrpcexample.api.proto.Person request,
-        io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.DeleteResponse> responseObserver) {
+    public void deletePerson(com.bq.sdk.api.proto.Person request,
+        io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.DeleteResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getDeletePersonMethod(), responseObserver);
     }
 
@@ -266,36 +266,36 @@ public final class PersonServiceGrpc {
             getCreatePersonMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.bq.vertxgrpcexample.api.proto.Person,
-                com.bq.vertxgrpcexample.api.proto.Person>(
+                com.bq.sdk.api.proto.Person,
+                com.bq.sdk.api.proto.Person>(
                   this, METHODID_CREATE_PERSON)))
           .addMethod(
             getFetchPersonMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.bq.vertxgrpcexample.api.proto.FetchPersonRequest,
-                com.bq.vertxgrpcexample.api.proto.Person>(
+                com.bq.sdk.api.proto.FetchPersonRequest,
+                com.bq.sdk.api.proto.Person>(
                   this, METHODID_FETCH_PERSON)))
           .addMethod(
             getFetchAllMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.bq.vertxgrpcexample.api.proto.FetchAllRequest,
-                com.bq.vertxgrpcexample.api.proto.FetchAllResponse>(
+                com.bq.sdk.api.proto.FetchAllRequest,
+                com.bq.sdk.api.proto.FetchAllResponse>(
                   this, METHODID_FETCH_ALL)))
           .addMethod(
             getUpdatePersonMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.bq.vertxgrpcexample.api.proto.Person,
-                com.bq.vertxgrpcexample.api.proto.Person>(
+                com.bq.sdk.api.proto.Person,
+                com.bq.sdk.api.proto.Person>(
                   this, METHODID_UPDATE_PERSON)))
           .addMethod(
             getDeletePersonMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.bq.vertxgrpcexample.api.proto.Person,
-                com.bq.vertxgrpcexample.api.proto.DeleteResponse>(
+                com.bq.sdk.api.proto.Person,
+                com.bq.sdk.api.proto.DeleteResponse>(
                   this, METHODID_DELETE_PERSON)))
           .build();
     }
@@ -321,40 +321,40 @@ public final class PersonServiceGrpc {
 
     /**
      */
-    public void createPerson(com.bq.vertxgrpcexample.api.proto.Person request,
-        io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.Person> responseObserver) {
+    public void createPerson(com.bq.sdk.api.proto.Person request,
+        io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.Person> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getCreatePersonMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void fetchPerson(com.bq.vertxgrpcexample.api.proto.FetchPersonRequest request,
-        io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.Person> responseObserver) {
+    public void fetchPerson(com.bq.sdk.api.proto.FetchPersonRequest request,
+        io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.Person> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getFetchPersonMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void fetchAll(com.bq.vertxgrpcexample.api.proto.FetchAllRequest request,
-        io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.FetchAllResponse> responseObserver) {
+    public void fetchAll(com.bq.sdk.api.proto.FetchAllRequest request,
+        io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.FetchAllResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getFetchAllMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void updatePerson(com.bq.vertxgrpcexample.api.proto.Person request,
-        io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.Person> responseObserver) {
+    public void updatePerson(com.bq.sdk.api.proto.Person request,
+        io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.Person> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getUpdatePersonMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void deletePerson(com.bq.vertxgrpcexample.api.proto.Person request,
-        io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.DeleteResponse> responseObserver) {
+    public void deletePerson(com.bq.sdk.api.proto.Person request,
+        io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.DeleteResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getDeletePersonMethod(), getCallOptions()), request, responseObserver);
     }
@@ -380,35 +380,35 @@ public final class PersonServiceGrpc {
 
     /**
      */
-    public com.bq.vertxgrpcexample.api.proto.Person createPerson(com.bq.vertxgrpcexample.api.proto.Person request) {
+    public com.bq.sdk.api.proto.Person createPerson(com.bq.sdk.api.proto.Person request) {
       return blockingUnaryCall(
           getChannel(), getCreatePersonMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public com.bq.vertxgrpcexample.api.proto.Person fetchPerson(com.bq.vertxgrpcexample.api.proto.FetchPersonRequest request) {
+    public com.bq.sdk.api.proto.Person fetchPerson(com.bq.sdk.api.proto.FetchPersonRequest request) {
       return blockingUnaryCall(
           getChannel(), getFetchPersonMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public com.bq.vertxgrpcexample.api.proto.FetchAllResponse fetchAll(com.bq.vertxgrpcexample.api.proto.FetchAllRequest request) {
+    public com.bq.sdk.api.proto.FetchAllResponse fetchAll(com.bq.sdk.api.proto.FetchAllRequest request) {
       return blockingUnaryCall(
           getChannel(), getFetchAllMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public com.bq.vertxgrpcexample.api.proto.Person updatePerson(com.bq.vertxgrpcexample.api.proto.Person request) {
+    public com.bq.sdk.api.proto.Person updatePerson(com.bq.sdk.api.proto.Person request) {
       return blockingUnaryCall(
           getChannel(), getUpdatePersonMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public com.bq.vertxgrpcexample.api.proto.DeleteResponse deletePerson(com.bq.vertxgrpcexample.api.proto.Person request) {
+    public com.bq.sdk.api.proto.DeleteResponse deletePerson(com.bq.sdk.api.proto.Person request) {
       return blockingUnaryCall(
           getChannel(), getDeletePersonMethod(), getCallOptions(), request);
     }
@@ -434,40 +434,40 @@ public final class PersonServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.bq.vertxgrpcexample.api.proto.Person> createPerson(
-        com.bq.vertxgrpcexample.api.proto.Person request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.bq.sdk.api.proto.Person> createPerson(
+        com.bq.sdk.api.proto.Person request) {
       return futureUnaryCall(
           getChannel().newCall(getCreatePersonMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.bq.vertxgrpcexample.api.proto.Person> fetchPerson(
-        com.bq.vertxgrpcexample.api.proto.FetchPersonRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.bq.sdk.api.proto.Person> fetchPerson(
+        com.bq.sdk.api.proto.FetchPersonRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getFetchPersonMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.bq.vertxgrpcexample.api.proto.FetchAllResponse> fetchAll(
-        com.bq.vertxgrpcexample.api.proto.FetchAllRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.bq.sdk.api.proto.FetchAllResponse> fetchAll(
+        com.bq.sdk.api.proto.FetchAllRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getFetchAllMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.bq.vertxgrpcexample.api.proto.Person> updatePerson(
-        com.bq.vertxgrpcexample.api.proto.Person request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.bq.sdk.api.proto.Person> updatePerson(
+        com.bq.sdk.api.proto.Person request) {
       return futureUnaryCall(
           getChannel().newCall(getUpdatePersonMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.bq.vertxgrpcexample.api.proto.DeleteResponse> deletePerson(
-        com.bq.vertxgrpcexample.api.proto.Person request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.bq.sdk.api.proto.DeleteResponse> deletePerson(
+        com.bq.sdk.api.proto.Person request) {
       return futureUnaryCall(
           getChannel().newCall(getDeletePersonMethod(), getCallOptions()), request);
     }
@@ -479,36 +479,36 @@ public final class PersonServiceGrpc {
 
     /**
      */
-    public void createPerson(com.bq.vertxgrpcexample.api.proto.Person request,
-        io.vertx.core.Future<com.bq.vertxgrpcexample.api.proto.Person> response) {
+    public void createPerson(com.bq.sdk.api.proto.Person request,
+        io.vertx.core.Future<com.bq.sdk.api.proto.Person> response) {
       asyncUnimplementedUnaryCall(getCreatePersonMethod(), PersonServiceGrpc.toObserver(response.completer()));
     }
 
     /**
      */
-    public void fetchPerson(com.bq.vertxgrpcexample.api.proto.FetchPersonRequest request,
-        io.vertx.core.Future<com.bq.vertxgrpcexample.api.proto.Person> response) {
+    public void fetchPerson(com.bq.sdk.api.proto.FetchPersonRequest request,
+        io.vertx.core.Future<com.bq.sdk.api.proto.Person> response) {
       asyncUnimplementedUnaryCall(getFetchPersonMethod(), PersonServiceGrpc.toObserver(response.completer()));
     }
 
     /**
      */
-    public void fetchAll(com.bq.vertxgrpcexample.api.proto.FetchAllRequest request,
-        io.vertx.core.Future<com.bq.vertxgrpcexample.api.proto.FetchAllResponse> response) {
+    public void fetchAll(com.bq.sdk.api.proto.FetchAllRequest request,
+        io.vertx.core.Future<com.bq.sdk.api.proto.FetchAllResponse> response) {
       asyncUnimplementedUnaryCall(getFetchAllMethod(), PersonServiceGrpc.toObserver(response.completer()));
     }
 
     /**
      */
-    public void updatePerson(com.bq.vertxgrpcexample.api.proto.Person request,
-        io.vertx.core.Future<com.bq.vertxgrpcexample.api.proto.Person> response) {
+    public void updatePerson(com.bq.sdk.api.proto.Person request,
+        io.vertx.core.Future<com.bq.sdk.api.proto.Person> response) {
       asyncUnimplementedUnaryCall(getUpdatePersonMethod(), PersonServiceGrpc.toObserver(response.completer()));
     }
 
     /**
      */
-    public void deletePerson(com.bq.vertxgrpcexample.api.proto.Person request,
-        io.vertx.core.Future<com.bq.vertxgrpcexample.api.proto.DeleteResponse> response) {
+    public void deletePerson(com.bq.sdk.api.proto.Person request,
+        io.vertx.core.Future<com.bq.sdk.api.proto.DeleteResponse> response) {
       asyncUnimplementedUnaryCall(getDeletePersonMethod(), PersonServiceGrpc.toObserver(response.completer()));
     }
 
@@ -518,36 +518,36 @@ public final class PersonServiceGrpc {
             getCreatePersonMethod(),
             asyncUnaryCall(
               new VertxMethodHandlers<
-                com.bq.vertxgrpcexample.api.proto.Person,
-                com.bq.vertxgrpcexample.api.proto.Person>(
+                com.bq.sdk.api.proto.Person,
+                com.bq.sdk.api.proto.Person>(
                   this, METHODID_CREATE_PERSON)))
           .addMethod(
             getFetchPersonMethod(),
             asyncUnaryCall(
               new VertxMethodHandlers<
-                com.bq.vertxgrpcexample.api.proto.FetchPersonRequest,
-                com.bq.vertxgrpcexample.api.proto.Person>(
+                com.bq.sdk.api.proto.FetchPersonRequest,
+                com.bq.sdk.api.proto.Person>(
                   this, METHODID_FETCH_PERSON)))
           .addMethod(
             getFetchAllMethod(),
             asyncUnaryCall(
               new VertxMethodHandlers<
-                com.bq.vertxgrpcexample.api.proto.FetchAllRequest,
-                com.bq.vertxgrpcexample.api.proto.FetchAllResponse>(
+                com.bq.sdk.api.proto.FetchAllRequest,
+                com.bq.sdk.api.proto.FetchAllResponse>(
                   this, METHODID_FETCH_ALL)))
           .addMethod(
             getUpdatePersonMethod(),
             asyncUnaryCall(
               new VertxMethodHandlers<
-                com.bq.vertxgrpcexample.api.proto.Person,
-                com.bq.vertxgrpcexample.api.proto.Person>(
+                com.bq.sdk.api.proto.Person,
+                com.bq.sdk.api.proto.Person>(
                   this, METHODID_UPDATE_PERSON)))
           .addMethod(
             getDeletePersonMethod(),
             asyncUnaryCall(
               new VertxMethodHandlers<
-                com.bq.vertxgrpcexample.api.proto.Person,
-                com.bq.vertxgrpcexample.api.proto.DeleteResponse>(
+                com.bq.sdk.api.proto.Person,
+                com.bq.sdk.api.proto.DeleteResponse>(
                   this, METHODID_DELETE_PERSON)))
           .build();
     }
@@ -573,40 +573,40 @@ public final class PersonServiceGrpc {
 
     /**
      */
-    public void createPerson(com.bq.vertxgrpcexample.api.proto.Person request,
-        io.vertx.core.Handler<io.vertx.core.AsyncResult<com.bq.vertxgrpcexample.api.proto.Person>> response) {
+    public void createPerson(com.bq.sdk.api.proto.Person request,
+        io.vertx.core.Handler<io.vertx.core.AsyncResult<com.bq.sdk.api.proto.Person>> response) {
       asyncUnaryCall(
           getChannel().newCall(getCreatePersonMethod(), getCallOptions()), request, PersonServiceGrpc.toObserver(response));
     }
 
     /**
      */
-    public void fetchPerson(com.bq.vertxgrpcexample.api.proto.FetchPersonRequest request,
-        io.vertx.core.Handler<io.vertx.core.AsyncResult<com.bq.vertxgrpcexample.api.proto.Person>> response) {
+    public void fetchPerson(com.bq.sdk.api.proto.FetchPersonRequest request,
+        io.vertx.core.Handler<io.vertx.core.AsyncResult<com.bq.sdk.api.proto.Person>> response) {
       asyncUnaryCall(
           getChannel().newCall(getFetchPersonMethod(), getCallOptions()), request, PersonServiceGrpc.toObserver(response));
     }
 
     /**
      */
-    public void fetchAll(com.bq.vertxgrpcexample.api.proto.FetchAllRequest request,
-        io.vertx.core.Handler<io.vertx.core.AsyncResult<com.bq.vertxgrpcexample.api.proto.FetchAllResponse>> response) {
+    public void fetchAll(com.bq.sdk.api.proto.FetchAllRequest request,
+        io.vertx.core.Handler<io.vertx.core.AsyncResult<com.bq.sdk.api.proto.FetchAllResponse>> response) {
       asyncUnaryCall(
           getChannel().newCall(getFetchAllMethod(), getCallOptions()), request, PersonServiceGrpc.toObserver(response));
     }
 
     /**
      */
-    public void updatePerson(com.bq.vertxgrpcexample.api.proto.Person request,
-        io.vertx.core.Handler<io.vertx.core.AsyncResult<com.bq.vertxgrpcexample.api.proto.Person>> response) {
+    public void updatePerson(com.bq.sdk.api.proto.Person request,
+        io.vertx.core.Handler<io.vertx.core.AsyncResult<com.bq.sdk.api.proto.Person>> response) {
       asyncUnaryCall(
           getChannel().newCall(getUpdatePersonMethod(), getCallOptions()), request, PersonServiceGrpc.toObserver(response));
     }
 
     /**
      */
-    public void deletePerson(com.bq.vertxgrpcexample.api.proto.Person request,
-        io.vertx.core.Handler<io.vertx.core.AsyncResult<com.bq.vertxgrpcexample.api.proto.DeleteResponse>> response) {
+    public void deletePerson(com.bq.sdk.api.proto.Person request,
+        io.vertx.core.Handler<io.vertx.core.AsyncResult<com.bq.sdk.api.proto.DeleteResponse>> response) {
       asyncUnaryCall(
           getChannel().newCall(getDeletePersonMethod(), getCallOptions()), request, PersonServiceGrpc.toObserver(response));
     }
@@ -636,24 +636,24 @@ public final class PersonServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_CREATE_PERSON:
-          serviceImpl.createPerson((com.bq.vertxgrpcexample.api.proto.Person) request,
-              (io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.Person>) responseObserver);
+          serviceImpl.createPerson((com.bq.sdk.api.proto.Person) request,
+              (io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.Person>) responseObserver);
           break;
         case METHODID_FETCH_PERSON:
-          serviceImpl.fetchPerson((com.bq.vertxgrpcexample.api.proto.FetchPersonRequest) request,
-              (io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.Person>) responseObserver);
+          serviceImpl.fetchPerson((com.bq.sdk.api.proto.FetchPersonRequest) request,
+              (io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.Person>) responseObserver);
           break;
         case METHODID_FETCH_ALL:
-          serviceImpl.fetchAll((com.bq.vertxgrpcexample.api.proto.FetchAllRequest) request,
-              (io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.FetchAllResponse>) responseObserver);
+          serviceImpl.fetchAll((com.bq.sdk.api.proto.FetchAllRequest) request,
+              (io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.FetchAllResponse>) responseObserver);
           break;
         case METHODID_UPDATE_PERSON:
-          serviceImpl.updatePerson((com.bq.vertxgrpcexample.api.proto.Person) request,
-              (io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.Person>) responseObserver);
+          serviceImpl.updatePerson((com.bq.sdk.api.proto.Person) request,
+              (io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.Person>) responseObserver);
           break;
         case METHODID_DELETE_PERSON:
-          serviceImpl.deletePerson((com.bq.vertxgrpcexample.api.proto.Person) request,
-              (io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.DeleteResponse>) responseObserver);
+          serviceImpl.deletePerson((com.bq.sdk.api.proto.Person) request,
+              (io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.DeleteResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -689,10 +689,10 @@ public final class PersonServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_CREATE_PERSON:
-          serviceImpl.createPerson((com.bq.vertxgrpcexample.api.proto.Person) request,
-              (io.vertx.core.Future<com.bq.vertxgrpcexample.api.proto.Person>) io.vertx.core.Future.<com.bq.vertxgrpcexample.api.proto.Person>future().setHandler(ar -> {
+          serviceImpl.createPerson((com.bq.sdk.api.proto.Person) request,
+              (io.vertx.core.Future<com.bq.sdk.api.proto.Person>) io.vertx.core.Future.<com.bq.sdk.api.proto.Person>future().setHandler(ar -> {
                 if (ar.succeeded()) {
-                  ((io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.Person>) responseObserver).onNext(ar.result());
+                  ((io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.Person>) responseObserver).onNext(ar.result());
                   responseObserver.onCompleted();
                 } else {
                   responseObserver.onError(ar.cause());
@@ -700,10 +700,10 @@ public final class PersonServiceGrpc {
               }));
           break;
         case METHODID_FETCH_PERSON:
-          serviceImpl.fetchPerson((com.bq.vertxgrpcexample.api.proto.FetchPersonRequest) request,
-              (io.vertx.core.Future<com.bq.vertxgrpcexample.api.proto.Person>) io.vertx.core.Future.<com.bq.vertxgrpcexample.api.proto.Person>future().setHandler(ar -> {
+          serviceImpl.fetchPerson((com.bq.sdk.api.proto.FetchPersonRequest) request,
+              (io.vertx.core.Future<com.bq.sdk.api.proto.Person>) io.vertx.core.Future.<com.bq.sdk.api.proto.Person>future().setHandler(ar -> {
                 if (ar.succeeded()) {
-                  ((io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.Person>) responseObserver).onNext(ar.result());
+                  ((io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.Person>) responseObserver).onNext(ar.result());
                   responseObserver.onCompleted();
                 } else {
                   responseObserver.onError(ar.cause());
@@ -711,10 +711,10 @@ public final class PersonServiceGrpc {
               }));
           break;
         case METHODID_FETCH_ALL:
-          serviceImpl.fetchAll((com.bq.vertxgrpcexample.api.proto.FetchAllRequest) request,
-              (io.vertx.core.Future<com.bq.vertxgrpcexample.api.proto.FetchAllResponse>) io.vertx.core.Future.<com.bq.vertxgrpcexample.api.proto.FetchAllResponse>future().setHandler(ar -> {
+          serviceImpl.fetchAll((com.bq.sdk.api.proto.FetchAllRequest) request,
+              (io.vertx.core.Future<com.bq.sdk.api.proto.FetchAllResponse>) io.vertx.core.Future.<com.bq.sdk.api.proto.FetchAllResponse>future().setHandler(ar -> {
                 if (ar.succeeded()) {
-                  ((io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.FetchAllResponse>) responseObserver).onNext(ar.result());
+                  ((io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.FetchAllResponse>) responseObserver).onNext(ar.result());
                   responseObserver.onCompleted();
                 } else {
                   responseObserver.onError(ar.cause());
@@ -722,10 +722,10 @@ public final class PersonServiceGrpc {
               }));
           break;
         case METHODID_UPDATE_PERSON:
-          serviceImpl.updatePerson((com.bq.vertxgrpcexample.api.proto.Person) request,
-              (io.vertx.core.Future<com.bq.vertxgrpcexample.api.proto.Person>) io.vertx.core.Future.<com.bq.vertxgrpcexample.api.proto.Person>future().setHandler(ar -> {
+          serviceImpl.updatePerson((com.bq.sdk.api.proto.Person) request,
+              (io.vertx.core.Future<com.bq.sdk.api.proto.Person>) io.vertx.core.Future.<com.bq.sdk.api.proto.Person>future().setHandler(ar -> {
                 if (ar.succeeded()) {
-                  ((io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.Person>) responseObserver).onNext(ar.result());
+                  ((io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.Person>) responseObserver).onNext(ar.result());
                   responseObserver.onCompleted();
                 } else {
                   responseObserver.onError(ar.cause());
@@ -733,10 +733,10 @@ public final class PersonServiceGrpc {
               }));
           break;
         case METHODID_DELETE_PERSON:
-          serviceImpl.deletePerson((com.bq.vertxgrpcexample.api.proto.Person) request,
-              (io.vertx.core.Future<com.bq.vertxgrpcexample.api.proto.DeleteResponse>) io.vertx.core.Future.<com.bq.vertxgrpcexample.api.proto.DeleteResponse>future().setHandler(ar -> {
+          serviceImpl.deletePerson((com.bq.sdk.api.proto.Person) request,
+              (io.vertx.core.Future<com.bq.sdk.api.proto.DeleteResponse>) io.vertx.core.Future.<com.bq.sdk.api.proto.DeleteResponse>future().setHandler(ar -> {
                 if (ar.succeeded()) {
-                  ((io.grpc.stub.StreamObserver<com.bq.vertxgrpcexample.api.proto.DeleteResponse>) responseObserver).onNext(ar.result());
+                  ((io.grpc.stub.StreamObserver<com.bq.sdk.api.proto.DeleteResponse>) responseObserver).onNext(ar.result());
                   responseObserver.onCompleted();
                 } else {
                   responseObserver.onError(ar.cause());
@@ -765,7 +765,7 @@ public final class PersonServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.bq.vertxgrpcexample.api.proto.PersonProto.getDescriptor();
+      return com.bq.sdk.api.proto.PersonProto.getDescriptor();
     }
 
     @java.lang.Override

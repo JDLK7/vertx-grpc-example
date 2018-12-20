@@ -2,12 +2,14 @@ package com.bq.vertxgrpcexample.api.controller;
 
 import com.bq.errorhandler.ErrorHandler;
 import com.bq.errorhandler.errors.NotFoundError;
+import com.bq.sdk.api.proto.FetchAllRequest;
+import com.bq.sdk.api.proto.FetchPersonRequest;
+import com.bq.sdk.api.proto.Person;
+import com.bq.sdk.api.proto.PersonServiceGrpc;
+import com.bq.sdk.api.proto.PersonServiceGrpc.PersonServiceVertxStub;
 import com.bq.vertxgrpcexample.api.converter.PersonConverter;
 import com.bq.vertxgrpcexample.api.dto.PersonDto;
-import com.bq.vertxgrpcexample.api.proto.FetchAllRequest;
-import com.bq.vertxgrpcexample.api.proto.FetchPersonRequest;
-import com.bq.vertxgrpcexample.api.proto.Person;
-import com.bq.vertxgrpcexample.api.proto.PersonServiceGrpc.PersonServiceVertxStub;
+
 import io.netty.handler.codec.http.HttpResponseStatus;
 import io.vertx.core.json.Json;
 import io.vertx.reactivex.ext.web.RoutingContext;
@@ -27,7 +29,7 @@ public class PersonRestController implements RestController, PersonConverter {
         this.errorHandler = errorHandler;
     }
 
-    public static PersonRestController getInstance(PersonServiceVertxStub serviceStub, ErrorHandler errorHandler) {
+    public static PersonRestController getInstance(PersonServiceGrpc.PersonServiceVertxStub serviceStub, ErrorHandler errorHandler) {
         if (instance == null) {
             synchronized (LOCK) {
                 if (instance == null) {

@@ -1,6 +1,6 @@
 package com.bq.vertxgrpcexample.service.service;
 
-import com.bq.vertxgrpcexample.service.proto.*;
+import com.bq.sdk.api.proto.*;
 import com.bq.vertxgrpcexample.service.repository.Repository;
 import io.vertx.core.Future;
 
