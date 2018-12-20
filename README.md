@@ -2,7 +2,7 @@
 
 This project contains an example to show the use of gRPC services with Vert.x3.
 
-<img align="right" src="Diagram.png">
+<img src="Diagram.png">
 
 ## Setup a MongoDB
 
