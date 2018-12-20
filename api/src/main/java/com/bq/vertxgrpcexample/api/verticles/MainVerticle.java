@@ -18,8 +18,9 @@ public class MainVerticle extends AbstractVerticle {
 
         var httpHost = sharedConfig.getHost().orElse("localhost");
         var httpPort = sharedConfig.getPort().orElse(8080);
-        var serviceHost = sharedConfig.getHost().orElse("localhost");
-        var servicePort = sharedConfig.getPort().orElse(8000);
+
+        var serviceHost = sharedConfig.getServiceHost().orElse("localhost");
+        var servicePort = sharedConfig.getServicePort().orElse(8000);
 
         var context = sharedConfig.getContext().orElse("default-context");
 
