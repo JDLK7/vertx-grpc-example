@@ -12,22 +12,22 @@ public class PersonService extends PersonServiceGrpc.PersonServiceVertxImplBase 
 
     private Repository<Person> repository;
 
-    private static PersonService instance;
+    private static PersonService INSTANCE;
 
     private PersonService(Repository repository) {
         this.repository = repository;
     }
 
     public static PersonService getInstance(Repository repository) {
-        if (instance == null) {
+        if (INSTANCE == null) {
             synchronized (LOCK) {
-                if (instance == null) {
-                    instance = new PersonService(repository);
+                if (INSTANCE == null) {
+                    INSTANCE = new PersonService(repository);
                 }
             }
         }
 
-        return instance;
+        return INSTANCE;
     }
 
     @Override

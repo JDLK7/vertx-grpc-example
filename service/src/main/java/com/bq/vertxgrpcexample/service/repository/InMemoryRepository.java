@@ -45,11 +45,11 @@ public class InMemoryRepository<T> implements Repository<T> {
 
     @Override
     public Single<T> update(T entity) {
-        return null;
+         throw new UnsupportedOperationException();
     }
 
     @Override
     public Completable delete(String id) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 }

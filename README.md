@@ -9,5 +9,5 @@ work with a MongoDB database. You only need to start a server using the followin
 docker command:
 
 ```
-docker run --rm -p 27017:27017 -d mongo
+docker run -d --rm -p 27017:27017 -d mongo
 ``` 

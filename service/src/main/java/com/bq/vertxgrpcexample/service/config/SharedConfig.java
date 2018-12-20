@@ -17,22 +17,22 @@ public class SharedConfig implements HttpServerConfig, DatabaseConfig, RedisConf
      */
     private JsonObject config;
 
-    private static SharedConfig instance;
+    private static SharedConfig INSTANCE;
     private static final Byte LOCK = (byte) 0;
 
     /**
      * @return a reference to the single instance of SharedConfig.
      */
     public static SharedConfig getInstance() {
-        if (instance == null) {
+        if (INSTANCE == null) {
             synchronized (LOCK) {
-                if (instance == null) {
-                    instance = new SharedConfig();
+                if (INSTANCE == null) {
+                    INSTANCE = new SharedConfig();
                 }
             }
         }
 
-        return instance;
+        return INSTANCE;
     }
 
     private SharedConfig() {}

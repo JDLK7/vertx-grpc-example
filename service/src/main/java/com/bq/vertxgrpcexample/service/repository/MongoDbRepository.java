@@ -20,7 +20,7 @@ public class MongoDbRepository implements Repository<Person>, PersonConverter {
     private static final Byte LOCK = 0;
 
     private static MongoClient client;
-    private static MongoDbRepository instance;
+    private static MongoDbRepository INSTANCE;
 
     private MongoDbRepository(Vertx vertx, SharedConfig sharedConfig) {
         var dbConfig = new JsonObject().put("db_name", sharedConfig.getDbName().orElse("default_db_name"));
@@ -30,14 +30,14 @@ public class MongoDbRepository implements Repository<Person>, PersonConverter {
     }
 
     public static MongoDbRepository getInstance(Vertx vertx, SharedConfig sharedConfig) {
-        if (instance == null) {
+        if (INSTANCE == null) {
             synchronized (LOCK) {
-                if (instance == null) {
-                    instance = new MongoDbRepository(vertx, sharedConfig);
+                if (INSTANCE == null) {
+                    INSTANCE = new MongoDbRepository(vertx, sharedConfig);
                 }
             }
         }
-        return instance;
+        return INSTANCE;
     }
 
     @Override
