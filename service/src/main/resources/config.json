@@ -1,0 +1,9 @@
+{
+  "service.context": "person-api",
+
+  "http.port": 8000,
+  "http.host": "127.0.0.1",
+
+  "db.name": "person_api",
+  "db.pool": "person_api_pool"
+}
