@@ -18,13 +18,13 @@ public class MainVerticle extends AbstractVerticle {
 
         var httpHost = sharedConfig.getHost().orElse("localhost");
         var httpPort = sharedConfig.getPort().orElse(8080);
+        var serviceHost = sharedConfig.getHost().orElse("localhost");
+        var servicePort = sharedConfig.getPort().orElse(8000);
+
         var context = sharedConfig.getContext().orElse("default-context");
 
-        var rpcHost = "127.0.0.1";
-        var rpcPort = 8181;
-
         var channel = VertxChannelBuilder
-                .forAddress(vertx.getDelegate(), rpcHost, rpcPort)
+                .forAddress(vertx.getDelegate(), serviceHost, servicePort)
                 .usePlaintext(true)
                 .build();
         var serviceStub = PersonServiceGrpc.newVertxStub(channel);

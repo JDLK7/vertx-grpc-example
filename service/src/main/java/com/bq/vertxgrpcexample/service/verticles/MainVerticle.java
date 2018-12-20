@@ -17,8 +17,8 @@ public class MainVerticle extends AbstractVerticle {
     public void start() throws Exception {
         var sharedConfig = SharedConfig.getInstance();
 
-        var rpcHost = "127.0.0.1";
-        var rpcPort = 8181;
+        var rpcHost = sharedConfig.getHost().orElse("127.0.0.1");
+        var rpcPort = sharedConfig.getPort().orElse(8181);
 
         vertx.executeBlocking(future -> {
             future.complete(MongoDbRepository.getInstance(vertx, sharedConfig));
@@ -35,7 +35,7 @@ public class MainVerticle extends AbstractVerticle {
                 if (event.succeeded()) {
                     System.out.println(String.format("Server listening on: %s:%s", rpcHost, rpcPort));
                 } else {
-                    System.out.println("Error at server startup");
+                    System.out.println("Error at server startup " + event.cause());
                 }
             });
         });
